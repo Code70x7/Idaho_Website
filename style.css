@@ -91,3 +91,31 @@
       .nav-right { margin-top:0.5rem; }
       .nav-right a { margin:0.25rem 0; display:block; }
     }
+
+    .city-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.city-info article {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.city-info article h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.city-info ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
