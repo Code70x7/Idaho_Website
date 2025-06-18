@@ -40,24 +40,37 @@
       margin:0.5rem 0;
     }
     main { display: flex; flex-wrap: wrap; padding: 1rem; }
-    article { flex:2; padding:1rem; }
+    
+    article { flex:2; padding:2rem; margin-bottom: 20px; margin-top: 30px;}
+    
     aside {
       flex:1;
-      padding:1rem;
-      background-color:#eef5ee;
+      padding: 2rem;
+      background-color:#f7f9f7;
       border-left:2px solid #ccc;
       font-style:italic;
+      margin-right: 70px;
     }
+    
     .cities-section { padding:1rem; background-color:#f7f7f7; }
+    .cities-section h2 {
+      text-align: center;
+      /* font-size: 2rem; */
+      color: #2c3e50;
+      margin-bottom: 2rem;
+    }
+
     .city-cards {
       display:flex;
-      gap:1rem;
+      gap:2rem;
       justify-content:center;
       flex-wrap:wrap;
+      padding-bottom: 50px;
     }
     .card {
       border:1px solid #ccc;
       border-radius:8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ← shadow added */
       padding:1rem;
       width:250px;
       text-align:center;
@@ -79,14 +92,14 @@
       cursor:pointer;
       margin-top:0.5rem;
     }
-    .card button:hover { background-color:#2d522d; }
+ .card button:hover { background-color:#2d522d; }
     footer {
       text-align:center;
       padding:1rem;
       background-color:#ddd;
       margin-top:2rem;
     }
-    @media (max-width: 600px) {
+ @media (max-width: 600px) {
       nav { flex-direction: column; align-items: flex-start; }
       .nav-right { margin-top:0.5rem; }
       .nav-right a { margin:0.25rem 0; display:block; }
@@ -118,4 +131,64 @@
 .city-info ul {
   padding-left: 1.2rem;
   list-style-type: disc;
+}
+
+/*this section is for the alignment of the pictures*/
+.scenic-pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.scenic-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.scenic-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.scenic-text,
+.scenic-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.scenic-image img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scenic-text h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .scenic-row,
+  .scenic-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .scenic-text,
+  .scenic-image {
+    max-width: 100%;
+  }
+
+  .scenic-image img {
+    max-width: 100%;
+  }
 }
