@@ -9,6 +9,7 @@
       top: 0;
       z-index: 10;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
     }
     .nav-left svg { height: 20px; width: 20px; }
     .nav-middle { flex: 1; }
@@ -219,7 +220,13 @@ header p {
   background: none;
   border: none;
   cursor: pointer;
+   margin-left: auto; /* pushes it to the right */
+   align-self: center;
+   margin-top: 0;
+  padding-top: 0;
+  line-height: 1;
 }
+
 
 @media (max-width: 768px) {
   .menu-toggle {
@@ -245,5 +252,6 @@ header p {
 
   nav {
     flex-wrap: wrap;
+    align-items: center;
   }
 }
