@@ -19,7 +19,7 @@
       font-weight: bold;
     }
     header {
-      background-image: url('/assets/forest.jpg');
+      background-image: url('assets/forest.jpg');
       background-size: cover;
       background-position: center;
       color: white;
