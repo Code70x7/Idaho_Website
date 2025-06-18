@@ -8,20 +8,24 @@
 </head>
 <body>
 
-  <nav>
-    <div class="nav-left">
-        <a href="index.html">
-  <img src="assets/logo.png" width="60px" height="60px" alt="Idaho Home Logo" />
-</a>
-    </div>
-    <div class="nav-middle"></div>
-    <div class="nav-right">
-      <a href="#">Home</a>
-      <a href="boise.html">Boise</a>
-      <a href="coeurdalene.html">Coeur d'Alene</a>
-      <a href="rexburg.html">Rexburg</a>
-    </div>
-  </nav>
+ <nav>
+  <div class="nav-left">
+    <a href="index.html">
+      <img src="assets/logo.png" width="60" height="60" alt="Idaho Home Logo" />
+    </a>
+  </div>
+
+  <!-- Hamburger button -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- Wrap nav links for toggling -->
+  <div class="nav-right" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="boise.html">Boise</a>
+    <a href="coeurdalene.html">Coeur d'Alene</a>
+    <a href="rexburg.html">Rexburg</a>
+  </div>
+</nav>
 
   <header>
     <h1>Welcome to Idaho</h1>
