@@ -18,6 +18,7 @@
       color: #333;
       font-weight: bold;
     }
+
     header {
       background-image: url('assets/forest.jpg');
       background-size: cover;
@@ -26,6 +27,7 @@
       padding: 5rem 1rem;
       text-align: center;
       position: relative;
+      margin-bottom: 0px;
     }
     header::after {
       content: "";
@@ -50,15 +52,13 @@ header p {
   font-size: 1.70rem; 
   text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.9);
 }
-    main { display: flex; flex-wrap: wrap; padding: 1rem;
-    background-image: url('assets/trunk2.png');
-      background-size: 450px auto; /* specific size */
-  background-repeat: no-repeat;
-  background-position: -2% 140%;
-  background-color: white;  }
+    main { display: flex; flex-wrap: wrap; padding: .1rem;
+         background-color: #ffffff;
+      margin-top: 50px;
+      margin-bottom:50px;
+ } 
     
-    article { flex:2; padding:2rem; margin-bottom: 20px; margin-top: 30px; }
-     
+    article { flex:2; padding:2rem; margin-left: 50px; margin-right: 50px; }
     
     aside {
       flex:1;
@@ -67,6 +67,8 @@ header p {
       border-left:2px solid #ccc;
       font-style:italic;
       margin-right: 70px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
     
     .cities-section { padding:1rem; background-color:#f7f7f7; }
