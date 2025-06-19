@@ -43,7 +43,7 @@ nav {
   color: white;
   /* White text */
 }
-
+/* relative poisitioning found here */
 header {
   background-image: url('assets/forest.jpg');
   background-size: cover;
@@ -54,7 +54,7 @@ header {
   position: relative;
   margin-bottom: 0px;
 }
-
+/* absolute positioning found here */
 header::after {
   content: "";
   position: absolute;
