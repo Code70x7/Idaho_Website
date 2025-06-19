@@ -468,3 +468,27 @@ button {
 button:hover {
   background-color: #2d522d;
 }
+
+/* Here is the float css */
+.fun-things {
+  overflow: auto;
+  /* clear floats */
+  max-width: 900px;
+  /* limit width for better centering */
+  margin: 80px auto;
+  /* center horizontally */
+  padding: 1rem 2rem;
+  /* some padding inside the container */
+}
+
+.float-left {
+  float: left;
+  margin: 0 1.5rem 1rem 0;
+  /* top/right/bottom/left spacing */
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  /* subtle shadow */
+}
