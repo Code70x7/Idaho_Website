@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>User Question Form</title>
-  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>User Question Form</title>
+
 </head>
+
 <body>
-<nav>
-  <div class="nav-left">
-    <a href="index.html">
-      <img src="assets/trunk_logo2.png" width="90" height="60" alt="Idaho Home Logo" />
-    </a>
-  </div>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="assets/trunk_logo2.png" width="90" height="60" alt="Idaho Home Logo" />
+            </a>
+        </div>
 
-  <!-- Hamburger button -->
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <!-- Hamburger button -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-  <!-- Wrap nav links for toggling -->
-  <div class="nav-right" id="nav-links">
-    <a href="index.html">Home</a>
-    <a href="boise.html">Boise</a>
-    <a href="coeurdalene.html">Coeur d'Alene</a>
-    <a href="rexburg.html">Rexburg</a>
-    <a href="form.html">Contact</a>
-  </div>
-</nav>
+        <!-- Wrap nav links for toggling -->
+        <div class="nav-right" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="boise.html">Boise</a>
+            <a href="coeurdalene.html">Coeur d'Alene</a>
+            <a href="rexburg.html">Rexburg</a>
+            <a href="form.html">Contact</a>
+        </div>
+    </nav>
 
-  <header>
-    <h1>Welcome to Idaho</h1>
-    <p>The Gem State</p>
-  </header>
+    <header>
+        <h1>Welcome to Idaho</h1>
+        <p>The Gem State</p>
+    </header>
 
-  <!-- this is the form section -->
-  <div class="form-container">
-    <h2>Contact Us</h2>
-    <form onsubmit="return validateEmails();">
-      <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" required />
+    <!-- this is the form section -->
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form onsubmit="return validateEmails();">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
 
-      <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required />
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required />
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
 
-      <label for="confirmEmail">Confirm Email Address:</label>
-      <input type="email" id="confirmEmail" name="confirmEmail" required />
+            <label for="confirmEmail">Confirm Email Address:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required />
 
-      <label for="question">Your Question:</label>
-      <textarea id="question" name="question" rows="5" placeholder="Type your question here..." required></textarea>
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="5" placeholder="Type your question here..."
+                required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-<script src="script.js"></script>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
